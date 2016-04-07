@@ -53,8 +53,8 @@ def onRunButton(obj):
     g = float(obj.g.text())
     	
     H = TCM.get_H(ph_count, at_count, wc, wa, g, RWA)
-    print(H)
-    print("RWA = ", RWA)
+    # print(H)
+    # print("RWA = ", RWA)
     at_list = []
 
     for i in range(0, obj.at_c+1):
@@ -66,7 +66,7 @@ def onRunButton(obj):
     	
     t0 = int(obj.t0.text())
     t1 = int(obj.t1.text())
-    	
+    print("t0 = ", t0, "; t1 = ", t1)
     TCM.run(w0=w0, H=H, t0=t0, t1=t1, nt=500, initstate=init_state, ymin=0, ymax=1, not_empty=False)
     	
     return

@@ -109,7 +109,7 @@ def run(w0, H, t0, t1, initstate, nt = 25, not_empty = False, ymin=0, ymax=1, ma
 	w = []
 	
 	for i in range(0, nt+1):
-		wt = get_wt(w0, H, i)
+		wt = get_wt(w0, H, i*dt)
 		if np.max(wt) > 1:
 			sys.exit("Error\n") 
 		w.append(np.abs(wt))
