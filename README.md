@@ -3,4 +3,4 @@
 
 Тема: "Кубитовое представление модели Тависа-Каммингса"
 
-C++/Python/numpy/scipy
+Python/numpy/scipy/PyQt
