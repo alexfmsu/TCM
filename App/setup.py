@@ -1,6 +1,7 @@
 application_title = "TCM"
 main_python_file = "Main.py"
 
+
 import sys
 from cx_Freeze import setup, Executable
 
